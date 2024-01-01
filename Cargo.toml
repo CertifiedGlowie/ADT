@@ -11,3 +11,12 @@ crypto = "0.5.1"
 hex = "0.4.3"
 rand = "0.8.5"
 structopt = "0.3.26"
+
+# USED TO STRIP AS MUCH OF DEBUG INFORMATINO AS POSSIBLE FOR RELEASE BUILDS, REMOVE [profile.release] AND EVERYTHING BELOW IT TO MAKE A NORMAL BINARY (STRIPPING CAUSES FALSE POSITIVES ON SOME ANTIVIRUSES)
+
+[profile.release]
+opt-level = 'z'     # Optimize for size
+lto = true          # Enable link-time optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations
+panic = 'abort'     # Abort on panic
+strip = true        # Strip symbols from binary*
