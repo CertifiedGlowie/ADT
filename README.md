@@ -1,6 +1,7 @@
 Usage:
 
 ```ADT.exe --file PATHTOFILE --key HEXEDKEY```
+
 or (if you on linux):
 
 ```./ADT --file PATHTOFILE --key HEXEDKEY```
