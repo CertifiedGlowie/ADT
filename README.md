@@ -1,3 +1,9 @@
+Usage:
+`ADT.exe --file PATHTOFILE --key HEXEDKEY`
+or (if you on linux)
+`./ADT --file PATHTOFILE --key HEXEDKEY`
+Keys are accepted only in hexadecimal format.
+
 Q & A:
 
 Q: What programming language it's using?: 
